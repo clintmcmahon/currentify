@@ -7,9 +7,8 @@ from datetime import timedelta
 if __name__ == '__main__':
 
     #Get the date this is being run
-    #now = datetime.datetime.now()
-    now = datetime.date(2019, 3, 3)
-
+    now = datetime.datetime.now()
+    
     #The Local Show starts at 6 PM Central Time
     start_date = now.strftime("%Y-%m-%dT18:00:00")
 
