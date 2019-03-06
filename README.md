@@ -1,8 +1,6 @@
-# Transmissionify
+# Currentify
 
-Transmissionify is a Python library that takes the latest Transmission On The Radio on from 89.3 The Current and turns it into a Spotify playlist. 
-
-It runs on a weekly basis to create an updated weekly playlist from Jake Rudh's Transmission On The Radio show on 89.3 The Current every Thursday at 10pm.
+Currentify is a Python library that takes parses playlists from 89.3 The Current (https://thecurrent.org) and turns them into a Spotify playlist. 
 
 ### Prerequisites
 
@@ -32,13 +30,13 @@ pip3 install requests
 Clone this repository
 
 ```
-git clone https://github.com/clintmcmahon/transmissionify
+git clone https://github.com/clintmcmahon/currentify
 ```
 
-Change directory to transmissionify
+Change directory to currentify
 
 ```
-cd transmissionify
+cd currentify
 ```
 
 Create a local_config.py file and populate with your values. Your file should look like this
@@ -56,11 +54,11 @@ SPOTIFY_REDIRECT_URI = 'http://localhost'
 
 Run the code
 ```
-python3 main.py 
+python3 main.py [playlist_name, start_date, end_date, playlist_description]
 ```
 A browser window will automatically open where you will authenticate with Spotify. After you've given access to your Spotify account the browser will redirect to a http://localhost url. Copy the localhost url and paste it into the command line. You'll only need to do this once, the code will create a cache authentication file on your local machine.
 
-After you've authenticated the program will read playlist and either create a new Transmission On The Radio playlist or delete the contents of the existing playlist before adding the latest tracks from the website.
+After you've authenticated the program will read playlist and either create a new playlist or delete the contents of the existing playlist before adding the latest tracks from the website.
 
 ## Built With
 

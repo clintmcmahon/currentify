@@ -39,9 +39,9 @@ def get_tracks(startdate, enddate):
                 airdate = playlist_row.find('time')
                 if artist and song:
                     tracks.append({'artist': artist.text.strip().replace("’", '').replace("'", ''),
-                                'song': song.text.strip().replace("’", '').replace("'", ''),
+                                'song': song.text.strip().replace("’", '').replace("'", '').replace(',',''),
                                 'airdate': airdate.text.strip()})
-        thisdate = startdate + timedelta(hours=1)
+        thisdate = thisdate + timedelta(hours=1)
     return tracks
     
 def main(args):

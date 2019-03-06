@@ -7,17 +7,16 @@ from datetime import timedelta
 if __name__ == '__main__':
 
     #Get the date this is being run
-    #now = datetime.datetime.now()
-    now = datetime.date(2019, 2,28)
+    now = datetime.datetime.now()
+
     #Transmission starts at 10 PM Central Time
     start_date = now.strftime("%Y-%m-%dT22:00:00")
 
-    #Swingin doors ends at 11 PM Central Time
+    #Transmission ends at 11 PM Central Time
     #Since we are only getting one hour worth of music, set the end date to the same as start date
     end_date = start_date
 
-    #name = "Transmission On The Radio"
-    name = "Test Playlist"
+    name = "Transmission On The Radio"
     description = "Updated every Friday. Support the music and donate @ TheCurrent.org"
     args = [name,start_date, end_date, description]
     thecurrent.main(args)
