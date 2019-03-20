@@ -15,7 +15,7 @@ if __name__ == '__main__':
     #The Local Show ends at 8 PM Central Time
     end_date = now.strftime("%Y-%m-%dT19:00:00")
 
-    name = "The Local Show On The Current"
-    description = "Andrea Swensson's latest Sunday Night Local Show on The Current. Spinning all the best from Minnesota's local music scene, both past and present. Updated every Sunday night. Support the music @ TheCurrent.org "
+    name = "The Local Show"
+    description = "The latest Sunday Night Local Show on 89.3 The Current. Spinning all the best from Minnesota's local music scene, both past and present. Updated every Sunday night. Support the music @ TheCurrent.org/donate."
     args = [name,start_date, end_date, description]
     thecurrent.main(args)
