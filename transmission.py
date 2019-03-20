@@ -17,7 +17,7 @@ if __name__ == '__main__':
     end_date = start_date
 
     name = "Transmission On The Radio"
-    description = "Updated every Friday. Support the music and donate @ TheCurrent.org"
+    description = "DJ Jake Rudh's latest Transmission On The Radio set on 89.3 The Current. A weekly recap from his post-punk, new wave and indie dance night at the Uptown VFW. Updated every Thursday night. Support the music @ TheCurrent.org/donate."
     args = [name,start_date, end_date, description]
     thecurrent.main(args)
 
