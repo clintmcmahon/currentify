@@ -41,6 +41,7 @@ cd currentify
 
 Create a local_config.py file and populate with your values. Your file should look like this
 
+Create the Client_Secret and Client_Id at https://developer.spotify.com
 ```
 #!/usr/bin/env python
 #encoding: utf-8
