@@ -16,8 +16,7 @@ if __name__ == '__main__':
     #Since we are only getting one hour worth of music, set the end date to the same as start date
     end_date = start_date
     
-    #name = "Transmission On The Radio"
-    name = "Test Playlist"
+    name = "Transmission On The Radio"
     description = "DJ Jake Rudh's latest Transmission On The Radio set. Updated every Thursday night. Support the music @ TheCurrent.org/donate."
     args = [name,start_date, end_date, description]
     thecurrent.main(args)
