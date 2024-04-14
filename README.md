@@ -10,19 +10,13 @@ Python3 (Python2 will require a couple code changes)
 
 [Spotify API Credentials](https://developer.spotify.com/my-applications/#!/)
 
-BeautifulSoup
+Depends
 ```
 pip3 install beautifulsoup4
-```
-
-Spotipy
-```
 pip3 install spotipy
-```
-
-Requests
-```
 pip3 install requests
+pip3 install pytz
+
 ```
 
 ### Installing
